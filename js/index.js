@@ -2,13 +2,19 @@ const demo = document.querySelector('#demo');
 const select = document.querySelector("#mySelect")
 const preloader = document.querySelector('#preloader');
 
+/**
+ * @returns возвращает измененый css элемент
+ */
 const showPreloader = () => {
     preloader.classList.add('active');
 };
-
+/**
+ * @returns возвращает измененый css элемент
+ */
 const hidePreloader = () => {
     preloader.classList.remove('active');
 };
+
 
 
 const myFunction = () => {
@@ -38,5 +44,7 @@ const myFunction = () => {
         });
 };
 
-
+/**
+ * @returns слушатель изменениый и отдает в функцию
+ */
 select.addEventListener("change", myFunction)
